@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
+      integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="icon" href="../assets/synapse brain.png" />
+    <script src="../js/script.js" defer></script>
+    <title>Synapse | Register</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="imgcontainer">
+        <div>
+          <img
+            class="synapse-logo"
+            src="../assets/synapse-logo.svg"
+            draggable="false"
+          />
+        </div>
+      </a>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="log-btn" href="/login"
+        ><button class="reg-btn">Login</button></a
+      >
+
+      <button class="light-check">
+        <img class="light-img" src="../assets/brightness.png" />
+      </button>
+
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/forum">Forum</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/forum">Forum</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <form action="/register?_method=POST" method="POST" class="form">
+        <h1 class="form-title">Register</h1>
+        <div class="form-group">
+          <input
+            style="color: white; width: 20rem"
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            placeholder="Name"
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            style="color: white; width: 20rem"
+            type="text"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="Email"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            style="color: white; width: 20rem"
+            type="password"
+            id="password"
+            name="password"
+            class="form-input"
+            placeholder="Password"
+          />
+        </div>
+        <a class="login-redirect" href="/login"
+          >Already have an account? <u>Login</u></a
+        >
+        <button type="submit" class="form-button">Register</button>
+      </form>
+      <div class="white-line"></div>
+      <img src="../assets/signupimg.png" class="signupimg" />
+    </div>
+  </body>
+</html>

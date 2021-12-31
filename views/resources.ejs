@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
+      integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/resources.css" />
+    <link rel="icon" href="../assets/synapse brain.png" />
+    <script src="../js/script.js" defer></script>
+    <title>Synapse | Resources</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="imgcontainer">
+        <div>
+          <img
+            class="synapse-logo"
+            src="../assets/synapse-logo.svg"
+            draggable="false"
+          />
+        </div>
+      </a>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <% if( name ){ %>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button class="reg-btn" type="submit">Log Out</button>
+      </form>
+      <% } else{ %>
+      <a class="log-btn" href="/login"
+        ><button class="reg-btn">Login</button></a
+      >
+      <% } %>
+
+      <button class="light-check">
+        <img class="light-img" src="../assets/brightness.png" />
+      </button>
+      <% if (name) { %>
+      <div class="name-user" style="user-select: none"><%= name %></div>
+      <% } %>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/forum">Forum</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="section-one">
+      <div class="section-text">
+        <div class="section-title">Resources</div>
+        <div class="small-span">
+          Interested but don’t know where to begin? <br />Check out the
+          resources provided by us for your respective fields of interest.<br />
+          Our resources cover all the basics you need to know to start
+          developing your skill.
+        </div>
+      </div>
+    </section>
+
+    <div class="section-two">
+      <div class="cards">
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.vt6rtkr2dh7p"
+        >
+          <h2>AI Software</h2>
+          <img src="../assets/ai-software.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.w3rfzdetci3f"
+        >
+          <h2>Blockchain</h2>
+          <img src="../assets/blockchain.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.nuephnr0xgh8"
+        >
+          <h2>Cloud Services</h2>
+          <img src="../assets/cloud.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.hiclrp6dqvkx"
+        >
+          <h2>Cyber Security</h2>
+          <img src="../assets/cyber-security.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.ut9jn0fpnmiy"
+        >
+          <h2>Deep Learning</h2>
+          <img src="../assets/deep-learning.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.dsv01rbrdnam"
+        >
+          <h2>Machine Learning</h2>
+          <img src="../assets/machine-learning.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.cy3bk8mqyph5"
+        >
+          <h2>Neural Networks</h2>
+          <img src="../assets/neural-network.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.584rnd1bg04c"
+        >
+          <h2>NLP & Speech Recognition</h2>
+          <img src="../assets/speech.png" />
+        </a>
+        <a
+          class="card"
+          href="https://docs.google.com/document/d/1Q8pOwnJ0lQ2RaJexQWJmwbv3fLcjJJNoVPJbJJcy9bw/edit#bookmark=id.72l9c29h6b1k"
+        >
+          <h2>Predictive Analytics</h2>
+          <img src="../assets/predictive-chart.png" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="left-footer">
+        <div class="footer-title">Limitless Possibilities.</div>
+        <div class="social-media-links">
+          <a href="https://twitter.com" class="fab fa-twitter"></a>
+          <a href="https://discord.com" class="fab fa-discord"></a>
+          <a href="https://instagram.com" class="fab fa-instagram"></a>
+          <a href="https://youtube.com" class="fab fa-youtube"></a>
+        </div>
+      </div>
+      <ul class="right-footer">
+        <li>
+          <h2>Explore</h2>
+          <ul class="box">
+            <li><a href="/">Home</a></li>
+            <li><a href="/forum">Forum</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Social</h2>
+          <ul class="box">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">Dribbble</a></li>
+          </ul>
+        </li>
+        <li class="features">
+          <h2>Information</h2>
+          <ul class="box">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Certifications</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Legal</h2>
+          <ul class="box">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="break-line"></div>
+      <img class="img-footer" src="../assets/synapse-logo.svg" alt="" />
+      <div class="register-btn-footer">
+        <a href="/register" class="register2"
+          ><button class="reg-btn">Register</button></a
+        >
+      </div>
+
+      <div class="bottom-footer">All Rights Reserved by Synapse &copy;</div>
+    </footer>
+  </body>
+</html>

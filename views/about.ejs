@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
+      integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="icon" href="../assets/synapse brain.png" />
+    <script src="../js/script.js" defer></script>
+    <title>Synapse | About</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="imgcontainer">
+        <div>
+          <img
+            class="synapse-logo"
+            src="../assets/synapse-logo.svg"
+            draggable="false"
+          />
+        </div>
+      </a>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <% if( name ){ %>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button class="reg-btn" type="submit">Log Out</button>
+      </form>
+      <% } else{ %>
+      <a class="log-btn" href="/login"
+        ><button class="reg-btn">Login</button></a
+      >
+      <% } %>
+
+      <button class="light-check">
+        <img class="light-img" src="../assets/brightness.png" />
+      </button>
+      <% if (name) { %>
+      <div class="name-user" style="user-select: none"><%= name %></div>
+      <% } %>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/forum">Forum</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="section-one">
+      <div class="section-text">
+        <div class="title">We, the AI builders' builders.</div>
+        <div class="small-span">
+          Organizing communities and providing resources to integrate artificial
+          intelligence into society.
+        </div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="main-objective">
+        <div class="title">
+          <h1>Our Objective</h1>
+        </div>
+        <div class="objective-text">
+          <p>
+            To provide a platform for people to share their knowledge and
+            experience in artificial intelligence. We want to create a space
+            promoting AI and simultaneously a community of friendly users.
+            Original, reliable, playful, and relatable.
+          </p>
+        </div>
+      </div>
+      <div class="main-objective-pt">
+        <div class="how-we-do-it">
+          <div>
+            <div class="title">
+              <h1>How it all began</h1>
+            </div>
+            <p>
+              Synapse was started to solve a big problem: how to communicate
+              with similar burning passion for AI around the world. At the time,
+              all the tools built for this job were slow, unreliable, and
+              complex. James and Dan knew they could make a better service that
+              encouraged talking, helped form memories, and had
+              beginner-friendly and master-challenging resources.
+            </p>
+          </div>
+          <img src="../assets/serverroom-blur.png" alt="" />
+        </div>
+      </div>
+      <div class="main-objective-pt">
+        <div class="what-goes-into-it">
+          <div>
+            <div class="title">
+              <h1>How We Do It</h1>
+            </div>
+            <p>
+              Our emphasis is on the community. We want to encourage people.
+              That is why we focus on the best working conditions for our
+              employees. Our services are built around a variety of different
+              technologies and the resources are designed with partenership with
+              Microsoft and Google.
+            </p>
+          </div>
+          <img src="../assets/work-job-blur.png" alt="" />
+        </div>
+      </div>
+      <div class="main-objective-pt">
+        <div class="what-goes-into-it">
+          <div>
+            <div class="title">
+              <h1>Where Are We Now</h1>
+            </div>
+            <p>
+              Synapse has thousands of people creating ideas and inspiring
+              others. Synapse is now where the AI World talks, hangs out, and
+              builds relationships. Our humble startups is one of the fastest
+              growing community and website ever.
+            </p>
+          </div>
+          <img src="../assets/ai-meetup.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="left-footer">
+        <div class="footer-title">Limitless Possibilities.</div>
+        <div class="social-media-links">
+          <a href="https://twitter.com" class="fab fa-twitter"></a>
+          <a href="https://discord.com" class="fab fa-discord"></a>
+          <a href="https://instagram.com" class="fab fa-instagram"></a>
+          <a href="https://youtube.com" class="fab fa-youtube"></a>
+        </div>
+      </div>
+      <ul class="right-footer">
+        <li>
+          <h2>Explore</h2>
+          <ul class="box">
+            <li><a href="/">Home</a></li>
+            <li><a href="/forum">Forum</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Social</h2>
+          <ul class="box">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">Dribbble</a></li>
+          </ul>
+        </li>
+        <li class="features">
+          <h2>Information</h2>
+          <ul class="box">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Certifications</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Legal</h2>
+          <ul class="box">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="break-line"></div>
+      <img class="img-footer" src="../assets/synapse-logo.svg" alt="" />
+      <div class="register-btn-footer">
+        <a href="/register" class="register2"
+          ><button class="reg-btn">Register</button></a
+        >
+      </div>
+
+      <div class="bottom-footer">All Rights Reserved by Synapse &copy;</div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1200,
+        });
+      });
+    </script>
+  </body>
+</html>
